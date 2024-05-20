@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Roboto:ital@0;1&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+h1 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: #5405C7;
+    font-weight: 600;
+}
+h2 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #5405C7;
+    font-weight: 600;
+}
+h3 { /* All h3 are the same */
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+h4 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    font-style: italic;
+}
+.fn-accent { /* Use in special occasions */
+    font-family: "Pacifico", cursive;
+}
+.text-justify { /* Was removed from bootstrap... */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f3f3f3;
+}
+
+
+.btn-cv { /* Download CV */
+    background-color: #ffc700;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.btn-cv:hover {
+    background-color: #ffd84a;
+}
+
+.btn:not(.btn-cv) { /* Any buttons */
+    background-color: #5405C7;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+.btn:not(.btn-cv):hover {
+    background-color: #7e28ff;
+}
+
+/*
+    Sidebar
+*/
+aside {
+    background-color: #0bceaf;
+}
+
+aside img + span { /* Tamara Plante label */
+    font-size: max(calc(16px + 0.875vw), 16px);
+}
+
+.progress {
+    width: 85%;
+}
+.progress .progress-bar {
+    background-color:#5405C7;
+}
+#progress-python .progress-bar {
+    width: 80%;
+}
+#progress-java .progress-bar {
+    width: 50%;
+}
+#progress-javascript .progress-bar {
+    width: 40%;
+}
+
+/*
+    Navigation
+*/
+.navbar {
+    background-color: #f3f3f3;
+}
+
+.navbar-nav li:not(:last-child) a {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    line-height: 1.8em;
+}
+#main-nav .nav-link:hover,
+#main-nav .nav-link:active,
+#main-nav .nav-link.active {
+    color: #5405C7;
+}
+
+.navbar-brand span { /* Mobile Tamara Plante */
+    font-size: 32px;
+}
+.navbar-brand .bi-circle-fill { /* Mobile: circle icon Tamara Plante */
+    font-size: 22px;
+    vertical-align: 5px;
+    color:#ffc700;
+}
+
+/*
+    Main content
+*/
+main {
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+#interests figure {
+    margin-right: 10px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#profile-card {
+    background-color: #0bceaf;
+}
+
+.card .card-text.fst-italic { /* coding highlight */
+    color: #5405C7;
+}
+
+.bg-image { /* Colorful keyboard*/
+    position: fixed;
+    height: 50vh;
+    width: 100vw;
+    right: 0;
+    bottom: 0;
+    opacity: 80%;
+    background-image: url("../images/bg-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/*
+    Footer
+*/
+#content > footer {
+    background-color: #d9d9d9;
+}
+#content > footer small { /* copyrights */
+    color: #777;
+}
+#content > footer a { /* Buttons */
+    display: inline-block;
+    vertical-align: bottom;
+}
+#content > footer a:not(:last-of-type) {
+    margin-right: 5px;
+}
+.button-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #fff;
+    color:#211951;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /*display: inline-grid;
+    align-items: center;
+    text-align: center;*/
+
+    /* old method, compatible with older browsers */
+    /*display: inline-block;
+    line-height: 50px;
+    text-align: center;*/
+}
+.button-icon:hover {
+    color:#5405C7;
+}
+
+
+
+@media (min-width: 768px) {
+    main {
+        padding-bottom: 125px;
+    }
+    main h1.fn-accent {
+        color: #211951;
+        font-size: min(calc(16px + 3vw), 64px);
+        font-weight: 400;
+        margin-left: -5px;
+    }
+    main h1.fn-accent + h2{
+        font-size: min(calc(16px + 1vw), 28px);
+    }
+    .navbar-nav li:not(:last-child) a {
+        font-size: 1.125em;
+    }
+    .navbar-nav li:not(:first-of-type) a::before {
+        content: "|";
+        padding-right: 1.1em;
+        color: #777 !important;
+    }
+    .bg-image {
+        bottom: 118px;
+        width: 50vw;
+    }
+    .fixed-md-bottom {
+        position: fixed; 
+        bottom: 0; 
+        width: 100%;
+    }
+}
