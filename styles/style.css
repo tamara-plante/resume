@@ -65,7 +65,10 @@ body {
 aside {
     background-color: #0bceaf;
 }
-
+aside img {
+    width: 350px;
+    height: 350px;
+}
 aside img + span { /* Tamara Plante label */
     font-size: max(calc(16px + 0.875vw), 16px);
 }
@@ -104,7 +107,7 @@ aside img + span { /* Tamara Plante label */
 }
 #main-nav .nav-link:hover,
 #main-nav .nav-link:active,
-#main-nav .nav-link.active {
+.nav-link.active {
     color: #5405C7;
 }
 
@@ -124,14 +127,27 @@ main {
     font-size: 1em;
 }
 
+#languages img {
+    width: 33px;
+    height: 33px;
+}
+
 #interests figure {
     margin-right: 10px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+#interests figure img {
+    width: 65px;
+    height: 65px;
+}
 
 #profile-card {
     background-color: #0bceaf;
+}
+#profile-card img { /* Mobile only */
+    max-height: 350px;
+    max-width: 350px;
 }
 
 .card .card-text.fst-italic { /* coding highlight */
@@ -145,7 +161,7 @@ main {
     right: 0;
     bottom: 0;
     opacity: 80%;
-    background-image: url("../images/bg-image.png");
+    background-image: url("../images/bg-image.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -155,10 +171,10 @@ main {
     Footer
 */
 #content > footer {
-    background-color: #d9d9d9;
+    background-color: #d4d4d4;
 }
 #content > footer small { /* copyrights */
-    color: #777;
+    color: #333333;
 }
 #content > footer a { /* Buttons */
     display: inline-block;
