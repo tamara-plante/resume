@@ -14,41 +14,36 @@
                 <!--
                     Sidebar
                 -->
-                <aside class="d-none d-md-block col-md-4 col-xl-3 pt-md-4">
-                    <div class="row">
-                        <div class="offset-md-2 col-md-8 text-center">
-                            <a class="btn btn-warning btn-cv mb-4 rounded-0 py-2 px-4 shadow text-nowrap" role="button" href="#">Download CV</a>
-                            <img class="img-fluid rounded-circle mb-1" src="images/profile.png" alt="profile picture">
-                            <span class="fn-accent">Tamara Plante</span>
-                            <hr class="mb-1">
-                            <h4 class="mb-3">skill levels</h4>
-                            <div class="mb-3">
-                                <h3>Python</h3>
-                                <div id="progress-python" class="progress mx-auto" role="progressbar" aria-label="Progress Python" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <h3>Java</h3>
-                                <div id="progress-java" class="progress mx-auto" role="progressbar" aria-label="Progress Java" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar"></div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <h3>Javascript</h3>
-                                <div id="progress-javascript" class="progress mx-auto" role="progressbar" aria-label="Progress Javascript" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar"></div>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary rounded-0 mt-3 py-2 px-4" role="button" href="experience.html">View more</a>
+                <aside class="col-md-4 col-xl-3 d-none d-md-block pt-md-4">
+                    <div class="offset-md-2 col-md-8 text-center">
+
+                        <a class="btn btn-warning btn-cv mb-4 rounded-0 py-2 px-4 shadow text-nowrap" role="button" href="#">Download CV</a>
+                        <img class="img-fluid rounded-circle mb-1" src="images/profile.png" alt="profile picture">
+                        <span class="fn-accent">Tamara Plante</span>
+                        <hr class="mb-1">
+                        <h4 class="mb-3">skill levels</h4>
+                        <h3>Python</h3>
+                        <div id="progress-python" class="progress mx-auto mb-3" role="progressbar" aria-label="Progress Python" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar"></div>
                         </div>
+                        <h3>Java</h3>
+                        <div id="progress-java" class="progress mx-auto mb-3" role="progressbar" aria-label="Progress Java" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <h3>Javascript</h3>
+                        <div id="progress-javascript" class="progress mx-auto mb-3" role="progressbar" aria-label="Progress Javascript" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a class="btn btn-primary rounded-0 mt-3 py-2 px-4" role="button" href="experience.html">View more</a>
+
                     </div>
                 </aside>
                 <!-- 
                     Main website 
                 -->
                 <!-- d-flex flex-column to make the footer sticky with mt-auto -->
-                <div id="content" class="d-flex flex-column h-100 col-12 col-md-8 col-xl-9 p-0 overflow-auto">
+                <div id="content" class="d-flex flex-column h-100 col-md-8 col-xl-9 p-0 overflow-auto">
+
                     <header class="sticky-top">
                         <nav class="navbar navbar-expand-md" aria-label="Offcanvas navbar">
                             <div class="container-fluid pt-md-4 ps-md-0">
@@ -90,13 +85,11 @@
                         </nav>
                     </header>
 
-                    <main class="container-fluid pt-md-5 ps-md-2">
-                        <div class="row">
-                            <div class="offset-1 col-10 col-md-8 col-xl-7">
-                                
-                                <h1 class="mt-3 mt-md-0 mb-4 text-center text-md-start">Experience</h1>
+                    <main class="pt-md-5 ps-md-3">
+                        <div class="offset-1 col-10 col-md-8 col-xl-7">
                             
-                            </div>
+                            <h1 class="mt-3 mt-md-0 mb-4 text-center text-md-start">Experience</h1>
+                        
                         </div>
                     </main>
 
@@ -104,6 +97,7 @@
                     <!--mt-auto with d-flex content allows sticky to properly stick to bottom when content is less than vh height -->
                     <footer class="footer container-fluid mt-auto fixed-md-bottom py-3">
                         <div class="row">
+
                             <div class="offset-1 col-10 col-md-2 mb-3 p-md-0">
                                 <h3>Contact</h3>
                                 <a href="#"><span class="button-icon"><i class="bi bi-envelope-fill"></i></span></a>
@@ -117,6 +111,7 @@
                             <div class="copyrights offset-1 col-10 offset-md-0 col-md-3 align-self-end">
                                 <small>&copy;2024 Tamara Plante. All Rights Reserved.</small>
                             </div>
+                            
                         </div>
                     </footer>
 
