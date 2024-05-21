@@ -92,6 +92,9 @@ aside img + span { /* Tamara Plante label */
 .navbar {
     background-color: #f3f3f3;
 }
+.navbar .offcanvas {
+    background-color: #f3f3f3;
+}
 
 .navbar-nav li:not(:last-child) a {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
