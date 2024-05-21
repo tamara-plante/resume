@@ -71,7 +71,8 @@ aside img + span { /* Tamara Plante label */
 }
 
 .progress {
-    width: 85%;
+    width: 80%;
+    height: 20px;
 }
 .progress .progress-bar {
     background-color:#5405C7;
@@ -80,10 +81,10 @@ aside img + span { /* Tamara Plante label */
     width: 80%;
 }
 #progress-java .progress-bar {
-    width: 50%;
+    width: 60%;
 }
 #progress-javascript .progress-bar {
-    width: 40%;
+    width: 50%;
 }
 
 /*
